@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>태그(tag)와 요소(element)</title>
+</head>
+<body>
+
+	<!-- 
+
+		# 태그 (tag)
+	
+			- 태그는 대부분 여는 태그와 닫는 태그로 이루어진다. 하지만 <img> <br>처럼 닫는 태그가 없는 경우도 있다.
+			- 태그는 대소문자를 구별하지 않는다. 하지만 태그와 속성은 모두 소문자로 쓰는 것이 일반적이다.
+			- 빈 공백은 한칸만 인식한다. 
+			- 태그 안에 다른 태그를 포함시킬 수 있다. 열고 닫는 태그를 순서와 짝이 맞게 지켜주어야 한다.
+			- 태그 안에 속성을 사용할 수 있다. 태그마다 속성과 속성값이 다르므로 필요에 따라 속성을 익힌다.
+		
+		
+		# 요소(element)
+		 	
+	 		- 요소는 시작태그와 종료태그로 이루어진 문서의 구성 요소이다. 
+	 		- 요소 : (시작태그 + contents + 종료태그)
+	 		
+	 	# 블록 요소 (Block Element)
+		
+			- 블록 요소는 모든 인라인 요소를 포함할 수 있고 다른 블록 요소도 포함 할 수 있다.
+			- 기본적으로 가로폭 전체의 넓이를 가지는 직사각형 형태가 되며 그리고 블록 요소 다음에는 줄바꿈이 이루어 진다.
+			  Ex) div태그 , h1 ~ h6태그 , p태그
+	
+	
+		# 인라인 요소 (Inline Element)
+		
+			- 인라인 요소는 항상 블록 요소안에 포함되어 있으며 인라인 요소안에 다른 인라인 요소가 포함될 수 있다. 
+			- 컨텐츠 시작점과 끝나는 지점까지를 넓이로 가지게 된다. 
+			- 인라인 요소 다음에는 줄바꿈이 없고 우측으로 바로 이어서 표시가 된다.
+			  Ex) span태그 , a태그 , strong태그 , em태그
+		
+	--> 
+	
+	I took the supermarket flowers from the windowsill Threw the day old tea from the cup Packed up the photo album
+	
+	<hr> <!-- hr태그 : 선을 표시하는 태그 -->
+	<hr/>
+	I took the supermarket flowers from the windowsill  <br> <!-- br태그 : 개행태그 -->
+	Threw the day old tea from the cup Packed up the photo album <br>
+    
+<br><br>
+<hr>
+	<!-- 
+	
+		웹에서의 띄어쓰기는 한칸이며 그 이상의 띄어쓰기는 아래의 표현식을 사용한다.
+	
+		&nbsp;	>  한칸 띄어쓰기
+		&ensp;	>  두칸 띄어쓰기
+		&emsp;  >  세칸 띄어쓰기
+	
+	 -->
+	 
+     Spread    your wings as you go And when  God  takes you back  He’ll say Hallelujah,  you’re home <br/>
+     Spread &nbsp;your wings as you go And when God takes you back &ensp;He’ll say Hallelujah, &nbsp;you’re home <br/>
+     Spread your wings as you go And when &ensp;God takes you back &emsp;He’ll say Hallelujah, you’re &emsp;home <br/>
+<hr>
+	<!-- 블록 요소 예시 -->
+	<!-- 헤딩(heading)은 웹페이지에서 머리기사 역할을 한다. -->
+
+<h1>헤딩1입니다.</h1>
+<h2>헤딩2입니다.</h2>
+<h3>헤딩3입니다.</h3>
+<hr>	
+	<!-- 단락(paragraph)은 하나의 토막을 의미하며, 웹브라우저가 <p>태그 앞뒤에 빈줄을 추가한다. -->
+<p>하나의 단락입니다.</p>	
+<p>
+	하나의 단락입니다.
+	하나의 단락입니다.
+	하나의 단락입니다.
+</p>	
+<hr>
+	<!-- 인라인 요소 예시
+	html 파일만 실행해보고 싶다면 html 파일 우클릭-> Debug As -> Chrome Debug클릭-->
+	<img src="..\webapp\image\example.jpg">
+	<a href="#">a태그 </a>
+	
+</body>
+</html>
